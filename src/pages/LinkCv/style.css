@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN+Guides&family=Quicksand:wght@300..700&family=Sarina&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+:root {
+   --default-font: "Quicksand", sans-serif;
+    --background-color-link-cv: #194027;
+    --default-text-color-link-cv: #f1eae4;
+    --background-color-link-cv-hover-button: #4e4d4c69;
+}
+
+.body-link-cv{
+    overflow: hidden;
+    background-color: var(--background-color-cv);
+    color: var(--default-text-color-cv);
+    font-family: var(--default-font);
+}
+
+.wrapper-link-cv{
+    margin-top: 50px;
+    width: 100vw;
+}
+
+.my-link-cv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.p-link-cv-en, .p-link-cv-pt{
+    margin: 40px 0px 40px 33px;
+    font-size: 18px;
+    font-family: var(--default-font);
+    font-weight: 700;
+}
+
+.button-link-cv-en, .button-link-cv-pt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    font-weight: 700;
+    border: 1px solid var(--default-text-color-link-cv);
+    border-radius: 20px;
+    color: var(--default-text-color-link-cv);
+    text-decoration: none;
+    cursor: pointer;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button-link-cv-en:hover, .button-link-cv-pt:hover{
+    background-color: var(--background-color-link-cv-hover-button);
+}
+
+@media screen and (min-width: 768px) {
+    .p-link-cv-en, .p-link-cv-pt{
+        font-size: 25px;
+    }
+}

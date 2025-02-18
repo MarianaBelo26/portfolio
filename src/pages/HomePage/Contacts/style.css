@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN+Guides&family=Quicksand:wght@300..700&family=Sarina&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --default-font: "Quicksand", sans-serif;
+    --background-contacts-color: #B4B2E1;
+    --default-text-color: #194027;
+    --border-my-social-network-color:#194027;
+    --color-icons-my-social-network-hover: #B4B2E1;
+    --background-my-social-network-hover: #194027;
+}
+
+.body-contacts {
+    overflow: hidden;
+    background-color: var(--background-contacts-color);
+    color: var(--default-text-color);
+}
+
+.wrapper-contacts {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    background-color: var(--background-contacts-color);
+}
+
+.title-contacts {
+    margin: 50px 0px 25px 32px;
+    font-size: 18px;
+    font-family: var(--default-font);
+    font-weight: 700;
+}
+
+.scrolling-text-wrapper {
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 50px;
+    width: 900px;
+    font-size: 50px;
+    animation: scroll-text 10s linear(0 0%, 0.65 108.33%) infinite;
+}
+
+.scrolling-text>span {
+    display: inline-flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-left: 100%;
+    font-weight: 600;
+}
+
+.my-social-networks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    & a{
+        color: var(--default-text-color);
+    }
+
+    & .github,
+    .linkedin,
+    .e-mail,
+    .instagram {
+        display: flex;
+        padding: 10px;
+        border: 1px solid var(--border-my-social-network-color);
+        border-radius: 50%;
+        box-shadow: 4px 3px 7px 0px #00000078;
+        cursor: pointer;
+
+        & .bi-github,
+        .bi-linkedin,
+        .bi-envelope-fill,
+        .bi-instagram {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+
+    & .github:hover,
+    .linkedin:hover,
+    .e-mail:hover,
+    .instagram:hover{
+        background-color: var(--background-button-project-hover);
+        color: var(--color-icons-my-social-network-hover);
+    }
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+} 
+
+@media screen and (min-width: 445px){
+    .title-contacts{
+        font-size: 25px;
+    }
+}
