@@ -299,7 +299,7 @@
 
     .project3-container {
         & .project-photo3 {
-            background: url('../../../assets/projects-images/project3/project3_large.png') center;
+            background: url('../../../assets/projects-images/project3/project3_large.png') top;
             background-size: cover;
             height: 450px;
         }
