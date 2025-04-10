@@ -442,7 +442,7 @@
 
     .all-project4-container {
       & .all-project-photo4 {
-          background: url('../../assets/projects-images/project4/project4_large') top;
+          background: url('../../assets/projects-images/project4/project4_large') center;
           background-size: cover;
           height: 450px;
       }

@@ -98,12 +98,12 @@ function AllProjects() {
                   <p>{t('all-projects.description3')}</p>
                 </div>
                 <div className="button-all-project3">
-                  <a href="https://marianabelo26.github.io/javascript/quiz/index.html" target="_blank" rel="noopener noreferrer" className="link-all-project-3">{t('all-projects.see-project')}</a>
+                  <a href="https://marianabelo26.github.io/todo/#/tasks" target="_blank" rel="noopener noreferrer" className="link-all-project-3">{t('all-projects.see-project')}</a>
                 </div>
               </motion.div>
             )}
           </div>
-          {/*<div className="all-project4-container"
+          <div className="all-project4-container"
             onMouseEnter={() => handleMouseEnter(4)}
             onMouseLeave={handleMouseLeave}
           >
@@ -125,12 +125,12 @@ function AllProjects() {
                   <p>{t('all-projects.description4')}</p>
                 </div>
                 <div className="button-all-project4">
-                  <a href="#" className="link-all-project-4">{t('all-projects.see-project')}</a>
+                  <a href="https://marianabelo26.github.io/javascript/quiz/index.html" target="_blank" rel="noopener noreferrer" >{t('all-projects.see-project')}</a>
                 </div>
               </motion.div>
             )}
           </div>
-          <div className="all-project5-container"
+         {/* <div className="all-project5-container"
             onMouseEnter={() => handleMouseEnter(5)}
             onMouseLeave={handleMouseLeave}
           >
