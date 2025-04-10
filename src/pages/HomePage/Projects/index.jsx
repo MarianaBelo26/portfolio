@@ -99,7 +99,7 @@ function Projects({ projects }) {
                   <p>{t('projects.description-project3')}</p>
                 </div>
                 <div className="button-project3">
-                  <a href="https://marianabelo26.github.io/javascript/quiz/index.html" target="_blank" rel="noopener noreferrer"  className="link-project-3">{t('projects.see-project')}</a>
+                  <a href="https://marianabelo26.github.io/todo/#/tasks" target="_blank" rel="noopener noreferrer"  className="link-project-3">{t('projects.see-project')}</a>
                 </div>
               </motion.div>
             )}
