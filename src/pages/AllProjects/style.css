@@ -229,7 +229,7 @@
   position: relative;
 
   & .all-project-photo4 {
-      background: url('../../assets/projects-images/project4/project4_small') top;
+      background: url('../../assets/projects-images/project4/project4_small.png') top;
       background-size: cover;
       height: 300px;
       width: 60vw;
@@ -442,7 +442,7 @@
 
     .all-project4-container {
       & .all-project-photo4 {
-          background: url('../../assets/projects-images/project4/project4_large') center;
+          background: url('../../assets/projects-images/project4/project4_large.png') center;
           background-size: cover;
           height: 450px;
       }
