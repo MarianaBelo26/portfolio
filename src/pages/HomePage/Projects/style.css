@@ -223,25 +223,6 @@
     }
 }
 
-& .button-project4, & .button-project5 {
-    text-align: center;
-
-    & .link-project-3 {
-        padding: 3px 10px;
-        text-decoration: none;
-        color: var(--default-text-color);
-        border: 1px solid var(--color-border-button);
-        border-radius: 25px;
-        font-weight: 500;
-        font-size: 17px;
-    }
-
-    & .button-project4:hover, & .button-project5:hover {
-        background-color: var(--background-button-project-hover);
-        color: var(--color-text-button-project);
-    }
-}
-
 .button-see-more-projects {
     margin: 50px 0px;
     display: flex;
@@ -341,25 +322,6 @@
             }
         }
     }
-
-    & .button-project4, & .button-project5 {
-    text-align: center;
-
-    & .link-project-3 {
-        padding: 3px 10px;
-        text-decoration: none;
-        color: var(--default-text-color);
-        border: 1px solid var(--color-border-button);
-        border-radius: 25px;
-        font-weight: 500;
-        font-size: 17px;
-    }
-
-    & .button-project4:hover, & .button-project5:hover {
-        background-color: var(--background-button-project-hover);
-        color: var(--color-text-button-project);
-    }
-}
 
     .button-see-more-projects {
         & button {
