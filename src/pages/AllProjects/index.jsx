@@ -125,7 +125,7 @@ function AllProjects() {
                   <p>{t('all-projects.description4')}</p>
                 </div>
                 <div className="button-all-project4">
-                  <a href="https://marianabelo26.github.io/javascript/quiz/index.html" target="_blank" rel="noopener noreferrer" >{t('all-projects.see-project')}</a>
+                  <a href="https://marianabelo26.github.io/javascript/quiz/index.html" target="_blank" rel="noopener noreferrer" className="link-all-project-4">{t('all-projects.see-project')}</a>
                 </div>
               </motion.div>
             )}
