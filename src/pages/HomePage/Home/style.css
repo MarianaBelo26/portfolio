@@ -93,6 +93,9 @@ hr {
         flex-direction: column;
 
         .my-photo {
+            background: url('../../../assets/myself_pageHome/myself_large.png');
+            background-size: cover;
+            background-position: center;
             width: 60vw;
             height: 70vh;
         }
