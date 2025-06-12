@@ -157,33 +157,6 @@ function AllProjects() {
               </motion.div>
             )}
           </div>
-         <div className="all-project5-container"
-            onMouseEnter={() => handleMouseEnter(6)}
-            onMouseLeave={handleMouseLeave}
-          >
-            <div className="all-project-photo6">
-              <figure>
-                <figcaption></figcaption>
-              </figure>
-            </div>
-            <div className="name-all-project6">
-              <h3>{t('all-projects.name5')}</h3>
-            </div>
-            {isHovered === 6 && (
-              <motion.div className="hover-all-project"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1.5 }}
-              >
-                <div className="description-all-project6">
-                  <p>{t('all-projects.description6')}</p>
-                </div>
-                <div className="button-all-project6">
-                  <a href="#" className="link-all-project-6">{t('all-projects.see-project')}</a>
-                </div>
-              </motion.div>
-            )}
-          </div>
         </div>
         <hr style={{marginBottom: "30px"}}/>
         <Contacts />
