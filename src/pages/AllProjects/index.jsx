@@ -71,7 +71,7 @@ function AllProjects() {
                   <p>{t('all-projects.description2')}</p>
                 </div>
                 <div className="button-all-project2">
-                  <a href="https://marianabelo26.github.io/javascript/dev-links/index.html" target='_blank' rel="noopener noreferrer"  className="link-all-project-2">{t('all-projects.see-project')}</a>
+                  <a href="https://jasminesjuice.netlify.app/" target='_blank' rel="noopener noreferrer"  className="link-all-project-2">{t('all-projects.see-project')}</a>
                 </div>
               </motion.div>
             )}
@@ -98,7 +98,7 @@ function AllProjects() {
                   <p>{t('all-projects.description3')}</p>
                 </div>
                 <div className="button-all-project3">
-                  <a href="https://marianabelo26.github.io/todo/#/tasks" target="_blank" rel="noopener noreferrer" className="link-all-project-3">{t('all-projects.see-project')}</a>
+                  <a href="https://marianabelo26.github.io/javascript/dev-links/index.html" target='_blank' rel="noopener noreferrer"  className="link-all-project-3">{t('all-projects.see-project')}</a>
                 </div>
               </motion.div>
             )}
@@ -125,12 +125,12 @@ function AllProjects() {
                   <p>{t('all-projects.description4')}</p>
                 </div>
                 <div className="button-all-project4">
-                  <a href="https://marianabelo26.github.io/javascript/quiz/index.html" target="_blank" rel="noopener noreferrer" className="link-all-project-4">{t('all-projects.see-project')}</a>
+                  <a href="https://marianabelo26.github.io/todo/#/tasks" target="_blank" rel="noopener noreferrer" className="link-all-project-4">{t('all-projects.see-project')}</a>
                 </div>
               </motion.div>
             )}
           </div>
-         {/* <div className="all-project5-container"
+          <div className="all-project5-container"
             onMouseEnter={() => handleMouseEnter(5)}
             onMouseLeave={handleMouseLeave}
           >
@@ -152,12 +152,38 @@ function AllProjects() {
                   <p>{t('all-projects.description5')}</p>
                 </div>
                 <div className="button-all-project5">
-                  <a href="#" className="link-all-project-5">{t('all-projects.see-project')}</a>
+                  <a href="https://marianabelo26.github.io/javascript/quiz/index.html" target="_blank" rel="noopener noreferrer" className="link-all-project-5">{t('all-projects.see-project')}</a>
                 </div>
               </motion.div>
             )}
           </div>
-          */}
+         <div className="all-project5-container"
+            onMouseEnter={() => handleMouseEnter(6)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className="all-project-photo6">
+              <figure>
+                <figcaption></figcaption>
+              </figure>
+            </div>
+            <div className="name-all-project6">
+              <h3>{t('all-projects.name5')}</h3>
+            </div>
+            {isHovered === 6 && (
+              <motion.div className="hover-all-project"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.5 }}
+              >
+                <div className="description-all-project6">
+                  <p>{t('all-projects.description6')}</p>
+                </div>
+                <div className="button-all-project6">
+                  <a href="#" className="link-all-project-6">{t('all-projects.see-project')}</a>
+                </div>
+              </motion.div>
+            )}
+          </div>
         </div>
         <hr style={{marginBottom: "30px"}}/>
         <Contacts />
