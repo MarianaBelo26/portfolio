@@ -109,7 +109,7 @@
   position: relative;
 
   & .all-project-photo2 {
-      background: url('../../assets/projects-images/project2/projeto2_small.jpg') top;
+      background: url('../../assets/projects-images/project2/project2_large.jpeg') top;
       background-size: cover;
       height: 300px;
       width: 60vw;
@@ -169,7 +169,7 @@
     position: relative;
 
     & .all-project-photo3 {
-        background: url('../../assets/projects-images/project3/project3_small.png') top;
+        background: url('../../assets/projects-images/project3/project3_small.jpg') top;
         background-size: cover;
         height: 300px;
         width: 60vw;
@@ -289,7 +289,7 @@
   position: relative;
 
   & .all-project-photo5 {
-      background: url('../../assets/projects-images/project5/project5_small') top;
+      background: url('../../assets/projects-images/project5/project5_small.png') top;
       background-size: cover;
       height: 300px;
       width: 60vw;
@@ -390,7 +390,7 @@
 
     .all-project2-container {
         & .all-project-photo2 {
-            background: url('../../assets/projects-images/project2/projeto2_large.png') top;
+            background: url('../../assets/projects-images/project2/project2_large.jpeg') top;
             background-size: cover;
             height: 350px;
         }
@@ -468,7 +468,7 @@
 
   .all-project5-container {
     & .all-project-photo5 {
-        background: url('../../assets/projects-images/project5/project5_large') top;
+        background: url('../../assets/projects-images/project5/project5_large.png') top;
         background-size: cover;
         height: 450px;
     }

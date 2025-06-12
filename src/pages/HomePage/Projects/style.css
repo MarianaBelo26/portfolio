@@ -110,7 +110,7 @@
     position: relative;
 
     & .project-photo2 {
-        background: url('../../../assets/projects-images/project2/projeto2_small.jpg');
+        background: url('../../../assets/projects-images/project2/project2_small.jpg');
         background-size: cover;
         background-position: top;
         height: 200px;
@@ -273,7 +273,7 @@
 
     .project2-container {
         & .project-photo2 {
-            background: url('../../../assets/projects-images/project2/projeto2_large.png') center;
+            background: url('../../../assets/projects-images/project2/project2_small.jpg') top;
             background-size: cover;
             height: 350px;
         }

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import './style.css'
 
-function Projects({ projects }) {
+function Projects() {
   const { t } = useTranslation()
   const [isHovered, setIsHovered] = useState(null)
   const navigate = useNavigate()
@@ -72,7 +72,7 @@ function Projects({ projects }) {
                   <p>{t('projects.description-project2')}</p>
                 </div>
                 <div className="button-project2">
-                  <a href="https://marianabelo26.github.io/javascript/dev-links/index.html" target='_blank' rel="noopener noreferrer"  className="link-project-2">{t('projects.see-project')}</a>
+                  <a href="https://jasminesjuice.netlify.app/" target='_blank' rel="noopener noreferrer"  className="link-project-2">{t('projects.see-project')}</a>
                 </div>
               </motion.div>
             )}
