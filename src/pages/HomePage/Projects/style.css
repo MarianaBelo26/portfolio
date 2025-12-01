@@ -10,12 +10,11 @@
 :root {
     --default-font: "Quicksand", sans-serif;
     --background-color: #FFF6ED;
-    --default-text-color: #194027;
-    --color-border-button: #194027;
-    --background-button-project-hover: #194027;
-    --background-project-hover: #ffffffdc;
-    --color-text-button-project: #FFF6ED;
-    --color-box-shadow-photos: #575553;
+    --text-color: #d5f5e0;
+    --text-color-projects: #b9b4dd;
+    --background-project: #2d583dc5;
+    --background-button-hover: #194027;
+    --color-box-shadow-photos: #6b696856;
 }
 
 .body-projects {
@@ -29,204 +28,99 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100vw;
     background-color: var(--background-color);
-
-    position: relative;
 }
 
 .project-title {
-    margin: 50px 0px 15px 30px;
+    margin: 50px 0px 20px;
     font-size: 18px;
+    width: 90vw;
 }
 
-.project1-container {
-    margin-left: 15px;
+.project-container {
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    position: relative;
-    z-index: 3;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 80vw;
+    height: 500px;
+    gap: 10px;
+    color: var(--text-color);
+    background-color: var(--background-project);
+    border-radius: 10px;
+    box-shadow: 1px 3px 20px 0px var(--color-box-shadow-photos);
+}
 
-    & .project-photo {
-        background: url('../../../assets/projects-images/project1/project1_small.png');
-        background-size: cover;
-        background-position: top;
-        height: 250px;
-        width: 50vw;
-        box-shadow: 1px 3px 20px 0px var(--color-box-shadow-photos);
+.name-project {
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.description-project {
+    margin: 15px 10px;
+    font-size: 13px;
+}
+
+.tecnologia {
+    margin: 0px 0px 10px 10px;
+    font-size: 13px;
+}
+
+.button-project {
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-align: center;
+
+    & .link-project {
+        padding: 3px 10px;
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 500;
     }
 
-    & .name-project {
-        margin: 5px 5px 0px;
-        font-size: 12px;
-    }
-
-    & .hover-project {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 250px;
-        width: 50vw;
-        background-color: var(--background-project-hover);
-
-        position: absolute;
-        top: 0px;
-
-        & .description-project {
-            text-align: center;
-            margin: 3px 3px;
-            font-size: 13px;
-            font-weight: 500;
-        }
-
-        & .button-project {
-            text-align: center;
-
-            & .link-project-1 {
-                padding: 3px 10px;
-                text-decoration: none;
-                color: var(--default-text-color);
-                border: 1px solid var(--color-border-button);
-                border-radius: 25px;
-                font-weight: 500;
-            }
-
-            & .link-project-1:hover {
-                background-color: var(--background-button-project-hover);
-                color: var(--color-text-button-project);
-            }
-        }
+    & .link-project:hover {
+        color: var(--text-color-projects);
+        text-decoration: underline;
+        text-decoration-color: #b9b4dd;
+        font-weight: 700;
     }
 }
 
-.project2-container {
-    margin-top: -150px;
-    margin-right: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    position: relative;
-
-    & .project-photo2 {
-        background: url('../../../assets/projects-images/project2/project2_small.jpg');
-        background-size: cover;
-        background-position: top;
-        height: 200px;
-        width: 30vw;
-        box-shadow: 1px 3px 20px 0px var(--color-box-shadow-photos);
-    }
-
-    & .name-project2 {
-        margin: 5px 5px 0px;
-        font-size: 12px;
-    }
-
-    & .hover-project {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 200px;
-        width: 30vw;
-        background-color: var(--background-project-hover);
-
-        position: absolute;
-        top: 0px;
-
-        & .description-project2 {
-            text-align: center;
-            margin: 3px 3px;
-            font-size: 13px;
-            font-weight: 500;
-        }
-
-        & .button-project2 {
-            text-align: center;
-
-            & .link-project-2 {
-                padding: 3px 10px;
-                text-decoration: none;
-                color: var(--default-text-color);
-                border: 1px solid var(--color-border-button);
-                border-radius: 25px;
-                font-weight: 500;
-                font-size: 12px;
-            }
-
-            & .link-project-2:hover {
-                background-color: var(--background-button-project-hover);
-                color: var(--color-text-button-project);
-            }
-        }
-    }
+.project1-photo {
+    background: url('../../../assets/projects-images/project1/project1_small.png');
+    background-size: cover;
+    background-position: top;
+    height: 280px;
+    width: 80vw;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.project3-container {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.project2-photo {
+    background: url('../../../assets/projects-images/project2/project2_small.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 280px;
+    width: 80vw;
+    border-radius: 10px 10px 0px 0px;
+}
 
-    position: relative;
 
-    & .project-photo3 {
-        background: url('../../../assets/projects-images/project3/project3_small.png');
-        background-size: cover;
-        background-position: top;
-        height: 300px;
-        width: 90vw;
-        box-shadow: 1px 3px 20px 0px var(--color-box-shadow-photos);
-    }
-
-    & .name-project3 {
-        margin: 5px 5px 0px;
-        font-size: 12px;
-    }
-
-    & .hover-project {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 300px;
-        width: 90vw;
-        background-color: var(--background-project-hover);
-
-        position: absolute;
-        top: 0px;
-
-        & .description-project3 {
-            text-align: center;
-            margin: 3px 3px;
-            font-size: 13px;
-            font-weight: 500;
-        }
-
-        & .button-project3 {
-            text-align: center;
-
-            & .link-project-3 {
-                padding: 3px 10px;
-                text-decoration: none;
-                color: var(--default-text-color);
-                border: 1px solid var(--color-border-button);
-                border-radius: 25px;
-                font-weight: 500;
-                font-size: 17px;
-            }
-
-            & .link-project-3:hover {
-                background-color: var(--background-button-project-hover);
-                color: var(--color-text-button-project);
-            }
-        }
-    }
+.project3-photo {
+    background: url('../../../assets/projects-images/project3/project3_small.png');
+    background-size: cover;
+    background-position: top;
+    background-color: #FFF6ED;
+    height: 280px;
+    width: 80vw;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .button-see-more-projects {
-    margin: 50px 0px;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 
     & button {
         padding: 3px 15px;
@@ -239,9 +133,14 @@
     }
 
     & button:hover {
-        background-color: var(--background-button-project-hover);
-        color: var(--color-text-button-project);
+        color: var(--text-color);
+        background-color: var(--background-button-hover);
     }
+}
+
+.project-container:hover{
+    transform: scale(1.02); 
+    transition: transform 0.5s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -251,76 +150,65 @@
         font-size: 25px;
     }
 
-    .project1-container {
-        & .project-photo {
-            background: url('../../../assets/projects-images/project1/project1_large.png') no-repeat top;
-            background-size: cover;
-            height: 400px;
-        }
-
-        & .name-project {
-            font-size: 15px;
-        }
-
-        & .hover-project {
-            height: 400px;
-
-            & .description-project {
-                font-size: 18px;
-            }
-        }
+    .project1-photo {
+        background: url('../../../assets/projects-images/project1/project1_large.png') no-repeat top;
+        background-size: cover;
     }
 
-    .project2-container {
-        & .project-photo2 {
-            background: url('../../../assets/projects-images/project2/project2_small.jpg') top;
-            background-size: cover;
-            height: 350px;
-        }
-
-        & .name-project2 {
-            font-size: 15px;
-        }
-
-        & .hover-project {
-            height: 350px;
-
-            & .description-project2 {
-                font-size: 18px;
-            }
-
-            & .button-project2 {
-                & .link-project-2 {
-                    font-size: 16px;
-                }
-            }
-        }
+    .project2-photo {
+        background: url('../../../assets/projects-images/project2/project2_large.jpeg') top;
+        background-size: cover;
     }
 
-    .project3-container {
-        & .project-photo3 {
-            background: url('../../../assets/projects-images/project3/project3_large.png') top;
-            background-size: cover;
-            height: 450px;
+    .project3-photo {
+        background: url('../../../assets/projects-images/project3/project3_large.png') top;
+        background-size: cover;
+    }
+
+    .button-see-more-projects {
+        & button {
+            font-size: 23px;
         }
+    }
+}
 
-        & .name-project3 {
-            font-size: 15px;
-        }
+@media screen and (min-width: 1024px) {
 
-        & .hover-project {
-            height: 450px;
+    .box-projects{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100vw;
 
-            & .description-project3 {
-                font-size: 25px;
-            }
+    }
 
-            & .button-project3 {
-                & .link-project-3 {
-                    font-size: 22px;
-                }
-            }
-        }
+    .project-title {
+        margin-bottom: 60px;
+        font-size: 25px;
+    }
+
+    .project-container {
+        width: 30vw;
+    }
+
+    .project1-photo {
+        background: url('../../../assets/projects-images/project1/project1_large.png') no-repeat top;
+        background-size: cover;
+        width: 30vw;
+    }
+
+    .project2-photo {
+        background: url('../../../assets/projects-images/project2/project2_large.jpeg') top;
+        background-size: cover;
+        width: 30vw;
+        height: 230px;
+    }
+
+    .project3-photo {
+        background: url('../../../assets/projects-images/project3/project3_large.png') top;
+        background-size: cover;
+        width: 30vw;
+        height: 300px;
     }
 
     .button-see-more-projects {

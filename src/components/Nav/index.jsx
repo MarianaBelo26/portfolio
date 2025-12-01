@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import './style.css'
@@ -11,6 +11,11 @@ function Nav() {
     const [widthScreen, setWidthScreen] = useState(window.innerWidth)
 
     const openMenu = (event) => {
+        event.preventDefault()
+        setMenuIsClicked(!menuIsClicked)
+    }
+
+    const closeMenu = (event) => {
         event.preventDefault()
         setMenuIsClicked(!menuIsClicked)
     }
@@ -48,10 +53,10 @@ function Nav() {
                             widthScreen >= 768 ? { display: 'flex' } :
                                 { display: menuIsClicked ? 'flex' : 'none' }
                         }>
-                        <li className="projects">
+                        <li className={`projects ${menuIsClicked? 'close' : ''}`} onClick={closeMenu}>
                             <Link to="/projects">{t('nav.projects')}</Link>
                         </li>
-                        <li className="cv">
+                        <li className={`cv ${menuIsClicked ? 'close' : ''}`} onClick={closeMenu} >
                             <Link to="/cv">CV</Link>
                         </li>
                     </ul>

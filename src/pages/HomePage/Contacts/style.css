@@ -92,7 +92,7 @@
     .linkedin:hover,
     .e-mail:hover,
     .instagram:hover{
-        background-color: var(--background-button-project-hover);
+        background-color: var(--background-my-social-network-hover);
         color: var(--color-icons-my-social-network-hover);
     }
 }

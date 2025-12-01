@@ -11,6 +11,8 @@
     --default-font: "Quicksand", sans-serif;
     --background-color: #FFF6ED;
     --default-text-color: #194027;
+    --skills-text-color: #534e74;
+    --skill-background-color: #b9b4dda3;
 
 }
 
@@ -39,6 +41,35 @@
 
     & .its-me{
         width: 90vw;
+    }
+
+    & .skills{
+        margin-top: 15px;
+        columns: 4;
+        font-size: 12px;
+
+        & .skill{
+        margin-bottom: 5px;
+        padding: 3px ;
+        text-align: center;
+        background-color: var(--skill-background-color);
+        color: var(--skills-text-color);
+        border-radius: 20px;
+        list-style-type: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .skills{
+        display: flex;
+        justify-content: center;
+
+        & .skill{
+        margin-right: 5px;
+        width: 75px;
+        font-size: 14px;
+        }
     }
 }
 
